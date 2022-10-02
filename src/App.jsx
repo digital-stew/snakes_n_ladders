@@ -89,7 +89,7 @@ function App() {
       <div className="noSelect">ladders taken: {laddersTaken.current} snakes taken: {snakesTaken.current}</div>
       <div className="noSelect">roll count: {rollCount.current}  </div>
       <div className="noSelect">your roll: {roll.current}</div>
-      {showroll && <button onClick={handleRoll}>roll</button> }
+      {showroll && <div className="btn" onClick={handleRoll}>roll</div> }
       <div>thanx to <a href="https://www.shutterstock.com">shutterstock.com </a> </div>
       </div>
       
