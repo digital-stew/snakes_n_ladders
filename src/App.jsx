@@ -26,6 +26,7 @@ function App() {
  useEffect(()=>{
   for (const property in ladders) {
     if(playerPosition === parseInt(property)){
+      setplayerPosition(playerPosition+1) //?bug fix
       setShowLadder(true)
       laddersTaken.current++
       setShowroll(false)
@@ -39,6 +40,7 @@ function App() {
   }
   for (const property in snakes) {
     if(playerPosition === parseInt(property)){
+      setplayerPosition(playerPosition-1) //?bug fix
       setShowSnake(true)
       snakesTaken.current++
       setShowroll(false)
